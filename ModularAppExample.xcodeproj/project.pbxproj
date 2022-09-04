@@ -14,6 +14,7 @@
 		170CE3FD28C49F010066F7D2 /* ModularAppExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170CE3FC28C49F010066F7D2 /* ModularAppExampleTests.swift */; };
 		170CE40728C49F010066F7D2 /* ModularAppExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170CE40628C49F010066F7D2 /* ModularAppExampleUITests.swift */; };
 		170CE40928C49F010066F7D2 /* ModularAppExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170CE40828C49F010066F7D2 /* ModularAppExampleUITestsLaunchTests.swift */; };
+		1787E09828C4DFA000D6B0D9 /* ChuckNorrisAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 1787E09728C4DFA000D6B0D9 /* ChuckNorrisAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		170CE40228C49F010066F7D2 /* ModularAppExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularAppExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170CE40628C49F010066F7D2 /* ModularAppExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularAppExampleUITests.swift; sourceTree = "<group>"; };
 		170CE40828C49F010066F7D2 /* ModularAppExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModularAppExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		170CE41628C4BDB20066F7D2 /* ChuckNorrisAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChuckNorrisAPI; sourceTree = "<group>"; };
+		1787E09528C4DF6500D6B0D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1787E09828C4DFA000D6B0D9 /* ChuckNorrisAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +78,12 @@
 		170CE3DF28C49F000066F7D2 = {
 			isa = PBXGroup;
 			children = (
+				170CE41528C4B8210066F7D2 /* Packages */,
 				170CE3EA28C49F000066F7D2 /* ModularAppExample */,
 				170CE3FB28C49F010066F7D2 /* ModularAppExampleTests */,
 				170CE40528C49F010066F7D2 /* ModularAppExampleUITests */,
 				170CE3E928C49F000066F7D2 /* Products */,
+				1787E09628C4DFA000D6B0D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +100,7 @@
 		170CE3EA28C49F000066F7D2 /* ModularAppExample */ = {
 			isa = PBXGroup;
 			children = (
+				1787E09528C4DF6500D6B0D9 /* Info.plist */,
 				170CE3EB28C49F000066F7D2 /* ModularAppExampleApp.swift */,
 				170CE3ED28C49F000066F7D2 /* ContentView.swift */,
 				170CE3EF28C49F010066F7D2 /* Assets.xcassets */,
@@ -127,6 +134,21 @@
 			path = ModularAppExampleUITests;
 			sourceTree = "<group>";
 		};
+		170CE41528C4B8210066F7D2 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				170CE41628C4BDB20066F7D2 /* ChuckNorrisAPI */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		1787E09628C4DFA000D6B0D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +165,9 @@
 			dependencies = (
 			);
 			name = ModularAppExample;
+			packageProductDependencies = (
+				1787E09728C4DFA000D6B0D9 /* ChuckNorrisAPI */,
+			);
 			productName = ModularAppExample;
 			productReference = 170CE3E828C49F000066F7D2 /* ModularAppExample.app */;
 			productType = "com.apple.product-type.application";
@@ -420,6 +445,7 @@
 				DEVELOPMENT_TEAM = P6D2V789F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ModularAppExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +475,7 @@
 				DEVELOPMENT_TEAM = P6D2V789F7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ModularAppExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +610,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1787E09728C4DFA000D6B0D9 /* ChuckNorrisAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChuckNorrisAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 170CE3E028C49F000066F7D2 /* Project object */;
 }
